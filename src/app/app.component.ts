@@ -22,7 +22,7 @@ export class AppComponent {
   check() {
     if (this.userData) {
       console.log(this.userData.value, "uer");
-      window.alert("Details submitted");
+      window.alert("SignUp Successfully");
       this.isRegister = false;
       this.isLogin = true;
     }

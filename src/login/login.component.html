@@ -1,0 +1,32 @@
+<div *ngIf="loginTo">
+	<h3>{{text}}</h3>
+	<div class="jumbotron col-lg-4 col-xs-4">
+		<form [formGroup]="userLogin">
+			<div class="form-group">
+				<label>UserName:</label>
+      <input 
+      type="text" 
+      class="form-control" 
+      formControlName="name" 
+      required
+      />
+    </div>
+    <div class="form-group">
+      <label>password:</label>
+      <input 
+      type="password" 
+      class="form-control" 
+      formControlName="pwd" 
+      required
+      />
+    </div>
+    <div>
+      <button class="btn btn-primary" (click)="login()">Login</button>
+    </div>
+  </form>
+</div>
+</div>
+
+<div *ngIf="isValid">
+  <app-home></app-home>
+</div>
